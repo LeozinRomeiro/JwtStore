@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using JwtStore.Core.SharedContext.Entities;
 
-namespace JwtStore.Core.AccountContext.Entities
+namespace JwtStore.Core.Contexts.SharedContext.ValueObjetcs
 {
-    public class User : Entity
+    public abstract class ValueObject
     {
-
     }
 }
