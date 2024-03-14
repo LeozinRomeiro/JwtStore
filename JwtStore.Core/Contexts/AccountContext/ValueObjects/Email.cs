@@ -14,7 +14,7 @@ namespace JwtStore.Core.AccountContext.ValueObjects
     public partial class Email : ValueObject
     {
 		private const string Pattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
-		public string Address { get; }
+		public string Address { get; } = string.Empty;
         public string Hash => Address.ToBase64();
 		public Verification Verification { get; private set; } = new();
         protected Email()

@@ -14,6 +14,10 @@ namespace JwtStore.Core.Contexts.AccountContext.ValueObjects
         private const string Special = "!@#$%ˆ&*(){}[];";
         public string Hash { get; } = string.Empty;
         public string ResetCode { get; } = Guid.NewGuid().ToString("N")[..8].ToUpper();
+        protected Password()
+        {
+            
+        }
         public Password(string? text = null)
         {
             if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))

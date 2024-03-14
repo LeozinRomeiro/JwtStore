@@ -12,7 +12,7 @@ namespace JwtStore.Api.Extensions
         public static void AddConfiguration(this WebApplicationBuilder builder)
         {
             Configuration.Database.ConnectionString =
-                builder.Configuration.GetConnectionString("DevSSMSConnection") ?? string.Empty;
+                builder.Configuration.GetConnectionString("DevDockerConnection") ?? string.Empty;
 
             Configuration.Secrets.ApiKey =
                 builder.Configuration.GetSection("Secrets").GetValue<string>("ApiKey") ?? string.Empty;
