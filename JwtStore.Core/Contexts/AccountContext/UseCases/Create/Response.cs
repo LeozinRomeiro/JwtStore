@@ -13,7 +13,7 @@ namespace JwtStore.Core.Contexts.AccountContext.UseCases.Create
         {
             
         }
-        public Response(string message,int status, IEnumerable<Notification> notifications)
+        public Response(string message, int status, IEnumerable<Notification>? notifications=null)
         {
             Message = message;
             Status = status;

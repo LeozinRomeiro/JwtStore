@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace JwtStore.Core.Contexts.AccountContext.UseCases.Create
 {
-    internal class Request
-    {
-    }
+    public record Request(string Name, string Email, string Password);
 }
